@@ -1,0 +1,18 @@
+
+# Node modules dependencies
+/node_modules/
+
+#.env file 
+.env
+
+# results from the mochawesome report
+cypress/reports/
+
+# cypress screenshots
+cypress/screenshots/
+
+# cypress videos recorded
+cypress/videos/
+
+# Removing Mac file
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "name": "d3assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "uiTests:chrome": "rm -f cypress/reports/mochawesome-report/*.json && npx cypress run --browser chrome --spec cypress/e2e/ui/specs/*.ts",
+    "generateReport": "rm -f cypress/reports/mochawesome-report/output.json && npx mochawesome-merge cypress/reports/mochawesome-report/*.json > cypress/reports/mochawesome-report/output.json && npx marge cypress/reports/mochawesome-report/output.json --reportDir cypress/reports/mochawesome-report/ && open cypress/reports/mochawesome-report/output.html",
+    "openReport": "open cypress/reports/mochawesome-report/output.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.2.0",
+    "dotenv": "^16.3.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "typescript": "^5.2.2"
+  }
+}
