@@ -1,7 +1,6 @@
 name: Run Automated Tests 
 
 on:
-https://github.com/matfritzen/D3Assessment/tree/master
 # This would run the pipeline every night at 11pm
 # schedule:
 #   - cron: '0 23 * * *'
