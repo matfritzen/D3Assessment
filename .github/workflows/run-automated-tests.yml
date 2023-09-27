@@ -39,12 +39,6 @@ jobs:
       with:
         name: mochawesome-json
         path: cypress/reports/
-
-    - name: Uploading Screenshots
-      uses: actions/upload-artifact@master
-      with:
-        name: screenshots
-        path: cypress/screenshots/
         
     - name: Uploading Videos
       uses: actions/upload-artifact@master
