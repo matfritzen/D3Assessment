@@ -18,7 +18,7 @@ export default defineConfig({
         overwrite: false,
         html: false,
         json: true,
-        reportDir: "cypress/reports/mochawesome-repoxrt"
+        reportDir: "cypress/reports/mochawesome-report"
     },
     video: true,
     retries: 2
